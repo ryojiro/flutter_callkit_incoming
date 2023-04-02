@@ -99,6 +99,7 @@ public class Call: NSObject {
     func startCall(withAudioSession audioSession: AVAudioSession ,completion :((_ success : Bool)->Void)?){
         startCallCompletion = completion
         hasStartedConnecting = true
+        hasConnected = true
     }
     
     var answCallCompletion :((Bool) -> Void)?
